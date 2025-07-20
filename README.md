@@ -15,9 +15,7 @@ uv sync
 ## Setup
 ### 1. Start Qdrant with Docker
 ```bash
-docker run -p 6333:6333 -p 6334:6334 \
-    -v $(pwd)/qdrant_storage:/qdrant/storage:z \
-    qdrant/qdrant
+docker run -p 6333:6333 qdrant/qdrant
 ```
 
 ### 2. Prepare your CSV data
