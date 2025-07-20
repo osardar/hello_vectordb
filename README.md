@@ -41,7 +41,19 @@ uv run python main.py --query "your search sentence here"
 uv run python main.py --csv data.csv --query "machine learning"
 ```
 
-## Command Line Arguments
+### Visualize sentence clusters (visualize.py)
+```bash
+# Basic t-SNE visualization
+uv run python visualize.py
+
+# Interactive plot with hover information
+uv run python visualize.py --interactive
+```
+
+![Interactive Sentence Analysis](assets/interactive_analysis.png)
+
+
+## Command Line Arguments (main.py)
 
 - `--csv`: Path to input CSV file (optional)
 - `--query`: Search query sentence (optional)
